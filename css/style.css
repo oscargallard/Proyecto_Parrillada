@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*__________________________Header__________________________*/
+header {
+    background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));    
+    padding: 30px 10px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    color: #E3B740;
+}
+
+#logo:hover {
+    letter-spacing: 1.5px;  
+}
+
+nav a {
+    margin: 10px;
+    color: #FF9F5C;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    box-shadow: 0 2px 4px rgba(255,156,166,0.3);
+}
+
+/*__________________________Footer__________________________*/
+footer {
+    background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.footer-info{
+    width: 300px;
+    color: #FECF49;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-info h3{
+    font-family: 'Pacifico', cursive;
+    color: #FF9F5C;
+    margin-bottom: 15px;
+}
+
+.footer-info a{    
+    color: #FECF49;  
+}
+
+.footer-info a i{
+    font-size: 35px;
+    margin: 0px 5px;
+}
+
+/*__________________________Main__________________________*/
+main { 
+    flex-grow: 1;
+}
+
+.contenedorPrincipal{
+    width: 100%;
+    height: 100%;
+}
+/* Banner Principal */
+
+.bannerPrincipal{
+    background-image: url(../img/bg-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+}
+
+.textoBanner{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.textoBanner h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.textoBanner p{
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+#servicios{
+    padding-top: 100px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+}
+
+.contenidoTarjeta{
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    width: 23%;
+    height: 450px;
+}
+
+.contenidoTarjeta h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.contenidoTarjeta p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    margin: 15px 20px;
+}
+
+.contenidoTarjeta i{
+    color: #fea116;
+    font-size: 55px;
+    margin: 15px 20px 10px 20px;
+}
+
+/* Nuestro Equipo */
+#contenedorChefs{
+    margin: 20px;
+    padding-top: 50px;
+}
+
+.primerTitulo{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fea116;
+    margin-bottom: 15px;
+}
+
+#contenedorChefs h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#contenedorTarjetasChef{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chefs{
+    background-color: white;
+    border-radius: 15px;
+    margin: 15px; 
+    text-align: center;
+    height: 300px;
+    width: 20%;
+}
+
+.chefs img{
+    height: 150px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.chefs p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Formulario */
+#formulario{
+    padding-top: 10px;
+}
+
+.formulario{
+    background-color: #0f172b;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.imgIzquierda{
+    width: 50%;
+}
+
+.imgIzquierda img{
+    height: 100%;
+}
+
+.formularioDeContacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 20px 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.titulosFormulario p{
+    color: #fea116;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.titulosFormulario h2{
+    color: #f1f8ff;
+    margin-bottom: 10px;
+}
+
+.datosPersonales{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    height: 100%;
+    width: 100%;
+    color: #f1f8ff;
+}
+
+.apynom{
+    width: 50%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apynom input{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid black;
+}
+
+.email{
+    margin-left: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email input{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid black;
+}
+
+.consulta{
+    color: #f1f8ff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.consulta textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid black;
+    resize: none;
+}
+
+form button{
+    background-color: #fea116;
+    border: none;
+    border-radius: 7px;
+    height: 40px;
+    width: 100%;
+    color: #f1f8ff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Menu */
+#menu{
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 100px;
+}
+#menu h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedorMenu{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedorMenuLateral{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 45px;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedorMenuIndividual{
+    display: flex;
+    margin-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedorMenuIndividual img{
+    margin-right: 15px;
+    height: 120px;
+}
+
+.descripcionDeMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.nombreYPrecioDeMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.precioMenu{
+    color: #fea116;
+    font-weight: bold;
+}
+
+.nombreMenu{
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+/* Nosotros */
+#nosotros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 30px 0px 30px;
+    width: 100%;
+}
+
+.imagenesDelRestaurant{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+
+.contenedorImagenesArriba{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.contenedorImagenesAbajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 115%;
+}
+
+.contenedorImagenesArriba img, .contenedorImagenesAbajo img{
+    margin: 5px 15px;
+}
+
+.imgPequeña{
+    width: 200px;
+    height: 200px;
+}
+
+.imgMediana{
+    width: 250px;
+    height: 250px;
+}
+
+.tituloInicialNosotros{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fea116;
+    margin-bottom: 15px;
+}
+
+.contenedorDescripcionRestaurant{
+    padding: 0px 30px;
+    margin: 0px 20px;
+    width: 40%;
+}
+
+.contenedorDescripcionRestaurant h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.contenedorDescripcionRestaurant h2 i{
+    color: #fea116;
+}
+
+.descripcionRestaurant{
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* Pantalla Small - Dispositivos moviles */
+@media screen and (max-width: 767px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        margin-bottom: 15px;
+    }
+
+     /* Bannner Principal */
+
+     .textoBanner h1{
+        font-size: 28px;
+        margin-top: 80px;
+    }
+
+    .textoBanner p{
+        margin-top: 30px;
+        font-size: 15px;
+        width: 90%;
+    }
+
+    /* Servicios */
+
+    #servicios{
+        padding-top: 10px;
+    }
+
+    .contenidoTarjeta{
+        width: 100%;
+        height: 450px;
+    }
+
+    .contenidoTarjeta i{
+        font-size: 40px;
+    }
+
+    .contenidoTarjeta p{
+        font-size: 15px;
+    }
+
+    /* Nosotros */
+    #nosotros{
+        padding-top: 20px;
+        margin: 0;
+    }
+    .imagenesDelRestaurant{
+        width: 50%;
+        justify-content: center;
+        margin-right: 0;
+        order: 1;
+    }
+
+    .contenedorImagenesArriba{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorImagenesAbajo{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .imgPequeña, .imgMediana{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .contenedorDescripcionRestaurant{
+        width: 100%;
+        padding: 0px 10px;
+        margin: 0;
+    }
+
+    /* Menu */
+    #menu{
+        padding-top: 20px;
+    }
+    .contenedorMenu{
+        flex-wrap: wrap;
+    }
+
+    .contenedorMenuLateral{
+        padding: 0px 20px;
+    }
+
+    /* Formulario */
+    .formulario{
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .imgIzquierda{
+        width: 100%;
+    }
+
+    .imgIzquierda img{
+        width: 100%;
+    }
+
+    .formularioDeContacto{
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .datosPersonales{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .apynom{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .apynom input{
+        width: 100%;
+    }
+
+    .email{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .email input{
+        width: 100%;
+    }
+
+    .consulta textarea{
+        width: 100%;
+    }
+
+    form button{
+        width: 100%;
+    }
+
+    /* Chefs */
+
+    #contenedorChefs{
+        padding-top: 20px;
+    }
+    .chefs{
+        width: 100%;
+    }
+
+    /* Footer */
+
+    .contenedorInfo{
+        margin-bottom: 10px;
+    }
+}
+
+/* Pantalla Medium - Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    footer {
+        justify-content: center;
+    }
+
+    /* Banner Principal */
+    .bannerPrincipal{
+        height: 50vh;
+    }
+
+    .textoBanner h1{
+        font-size: 60px;
+    }
+
+    .textoBanner p{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Servicios */
+    #servicios{
+        padding-top: 20px;
+    }
+
+    .tarjetas{
+        margin: 0;
+    }
+
+    .contenidoTarjeta{
+        width: 40%;
+    }
+
+    /* Nosotros */
+    #nosotros{
+        padding-top: 20px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .imagenesDelRestaurant{
+        width: 90%;
+        margin-right: 0;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .contenedorDescripcionRestaurant{
+        width: 90%;
+        margin: 10px 0px;
+        padding: 0px 10px;
+    }
+
+    /* Menu */
+    #menu{
+        padding-top: 20px;
+    }
+
+    /* Formulario */
+    .formulario{
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+
+    .imgIzquierda{
+        width: 100%;
+    }
+
+    .imgIzquierda img{
+        width: 100%;
+    }
+
+    .formularioDeContacto{
+        width: 100%;
+    }
+
+    .apynom input{
+        width: 100%;
+    }
+
+    /* Chefs */
+    .chefs{
+        width: 40%;
+    }
+
+    .contenedorInfo{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    
+}
