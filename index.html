@@ -59,8 +59,7 @@
                 </div>
             </article>
             <article id="nosotros">
-                <div class="imagenesDelRestaurant">
-                    <!-- Aca van las imagenes -->
+                <div class="imagenesDelRestaurant">                    
                     <div class="contenedorImagenesArriba">
                         <img src=./img/about-1.jpg alt="imagen del restaurant" class="imgMediana">
                         <img src=./img/about-2.jpg alt="imagen del restaurant" class="imgPequeña">
@@ -84,8 +83,7 @@
                 <p class="primerTitulo">- Nuestro menú -</p>
                 <h2><b>Nuestros platos populares</b></h2>
                 <div class="contenedorMenu">
-                    <div class="contenedorMenuLateral">
-                        <!-- Menu izquierdo -->
+                    <div class="contenedorMenuLateral">                       
                         <div class="contenedorMenuIndividual">
                             <img src=./img/menu-1.jpg alt="Chiken Burger">
                             <div class="descripcionDeMenu">
@@ -132,8 +130,7 @@
                         </div>
                     </div>
 
-                    <div class="contenedorMenuLateral">
-                        <!-- Menu derecho -->
+                    <div class="contenedorMenuLateral">                        
                         <div class="contenedorMenuIndividual">
                             <img src=./img/menu-5.jpg alt="Chiken Burger">
                             <div class="descripcionDeMenu">
@@ -182,12 +179,11 @@
             </article>
             <article id="formulario">
                 <div class="formulario">
-                    <div class="imgIzquierda">
-                        <!-- imagen de pareja -->
+                    <div class="imgIzquierda">                        
                         <img src=./img/contacto.jpg alt="">
                     </div>
                     <div class="formularioDeContacto">
-                        <!-- formulario -->
+                        <!-- Formulario -->
                         <div class="titulosFormulario">
                             <p>- Consulta -</p>
                             <h2>Completá el formulario</h2>
@@ -196,7 +192,7 @@
                             <div class="datosPersonales">
                                 <div class="apynom">
                                     <label for="nombreApellido">Nombre y Apellido:</label>
-                                    <input id="nombreApellido" type="text" placeholder="Ingrese su nombre completo" maxlength="50" minlength="5" required>
+                                    <input id="nombreApellido" type="text" placeholder="Ingrese su nombre completo" maxlength="55" minlength="6" required>
                                 </div>
                                 <div class="email">
                                     <label for="email">Email:</label>
@@ -235,6 +231,10 @@
                 </div>
             </article>
         </section>
+        <!-- Boton flecha para arriba -->
+        <div id="flecha-arriba">
+            <img src="./img/arrow_top.webp" alt="Flecha hacia arriba" onclick="scrollToTop()">          
+        </div>
     </main>
 
     <footer>
@@ -264,12 +264,14 @@
         </p>
       </div>
       <div class="footer-info">
-        <!-- Redes -->
+        <!-- Redes sociales -->
         <h3>Nuestras Redes</h3>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-facebook"></i></a>
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
