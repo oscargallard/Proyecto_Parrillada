@@ -1,5 +1,7 @@
+/* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Pacifico&display=swap');
 
+/* Estilos generales */
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* Boton flecha para arriba */
@@ -27,15 +30,15 @@ body {
     height: auto;
 }
 
-/*__________________________Header__________________________*/
-header {
+/* Estilos de encabezado y pie de página */
+header, footer {
     background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));    
     padding: 30px 10px;
-    font-family: 'Nunito', sans-serif;
     display: flex;
     justify-content: space-between;
 }
 
+/* Estilos de logo */
 #logo {
     color: #E3B740;
 }
@@ -44,6 +47,7 @@ header {
     letter-spacing: 1.5px;  
 }
 
+/* Estilos de navegación */
 nav a {
     margin: 10px;
     color: #FF9F5C;
@@ -55,15 +59,7 @@ nav a:hover {
     box-shadow: 0 2px 4px rgba(255,156,166,0.3);
 }
 
-/*__________________________Footer__________________________*/
-footer {
-    background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));
-    display: flex;   
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-
+/* Estilos de información de pie de página */
 .footer-info{
     width: 300px;
     color: #FECF49;
@@ -86,7 +82,7 @@ footer {
     margin: 0px 5px;
 }
 
-/*__________________________Main__________________________*/
+/* Estilos de contenido principal */
 main { 
     flex-grow: 1;
 }
